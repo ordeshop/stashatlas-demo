@@ -8,7 +8,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#F2EBDD",
-  "theme_color": "#13203A",
+  "theme_color": "#F2EBDD",
   "icons": [
     {
       "src": "/stashatlas-demo/icon-192.png",
