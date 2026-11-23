@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head><script>(function(){
+try{var WS=window.WebSocket;if(WS){var Safe=function(u,p){try{return p!==undefined?new WS(u,p):new WS(u);}catch(e){return{readyState:3,url:String(u),protocol:"",binaryType:"blob",bufferedAmount:0,extensions:"",send:function(){},close:function(){},addEventListener:function(){},removeEventListener:function(){},dispatchEvent:function(){return false},onopen:null,onclose:null,onerror:null,onmessage:null};}};Safe.prototype=WS.prototype;Safe.CONNECTING=0;Safe.OPEN=1;Safe.CLOSING=2;Safe.CLOSED=3;window.WebSocket=Safe;}}catch(_){}
+function mem(){var d={};return{getItem:function(k){return Object.prototype.hasOwnProperty.call(d,k)?d[k]:null},setItem:function(k,v){d[k]=String(v)},removeItem:function(k){delete d[k]},clear:function(){d={}},key:function(i){var ks=Object.keys(d);return i<ks.length?ks[i]:null},get length(){return Object.keys(d).length}};}
+["localStorage","sessionStorage"].forEach(function(n){var ok=false;try{var st=window[n];st.setItem("__probe","1");st.removeItem("__probe");ok=true;}catch(_){}if(!ok){try{Object.defineProperty(window,n,{value:mem(),configurable:true,writable:true});}catch(_){}}});
+})();</script>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+    <title>StashAtlas</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/stashatlas-demo/favicon.ico"/><link rel="manifest" href="/stashatlas-demo/manifest.webmanifest"><link rel="apple-touch-icon" href="/stashatlas-demo/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="StashAtlas"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#13203A"><script>(function(){function show(m){try{var d=document.getElementById("boot-diag");if(!d){d=document.createElement("pre");d.id="boot-diag";d.style.cssText="position:fixed;left:0;right:0;bottom:0;z-index:99999;margin:0;padding:12px;font:12px/1.4 Menlo,monospace;background:#fff3f0;color:#7a1c0c;white-space:pre-wrap;max-height:50vh;overflow:auto;border-top:2px solid #c8432b";(document.body||document.documentElement).appendChild(d);}d.textContent+=m+"\n";}catch(_){}}
+window.addEventListener("error",function(e){show("Error: "+(e.message||e)+(e.filename?" @ "+e.filename.split("/").pop()+":"+e.lineno:""));});
+window.addEventListener("unhandledrejection",function(e){show("Promise: "+(e.reason&&(e.reason.stack||e.reason.message)||e.reason));});
+setTimeout(function(){var r=document.getElementById("root");if(!r||!r.children.length){show("App did not start after 12s. UA: "+navigator.userAgent);}},12000);})();</script></head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/stashatlas-demo/_expo/static/js/web/__expo-metro-runtime-ed4c1cfa6193d76fc294130e42bd1916.js" defer></script><script src="/stashatlas-demo/_expo/static/js/web/__common-76e4cc2abb58ec01df30fbb4b288b2a7.js" defer></script><script src="/stashatlas-demo/_expo/static/js/web/entry-4013def623189744a525f192563fbb15.js" defer></script>
+</body>
+</html>
